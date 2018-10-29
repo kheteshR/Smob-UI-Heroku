@@ -54,6 +54,7 @@ export default Ember.Controller.extend(Validations,{
             this.transitionToRoute('userhome') ;   
         },
         login:function(){
+            console.log("------------>",CONFIG.GOURL)
             var email = this.get('email');
             console.log(email);
               var password = this.get('password');
