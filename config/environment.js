@@ -30,7 +30,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.GOURL='http://localhost:3008';
+    ENV.GOURL='https://smob-back.herokuapp.com/';
     ENV['g-map'] = {
       exclude: true,
       libraries: ['places', 'geometry'],
@@ -55,7 +55,7 @@ module.exports = function(environment) {
   }
 
    if (environment === 'production') {
-    ENV.GOURL='http://119.81.59.59:3008';
+    ENV.GOURL='https://smob-back.herokuapp.com/';
     ENV.locationType = 'hash';
      ENV['g-map'] = {
       exclude: true,
